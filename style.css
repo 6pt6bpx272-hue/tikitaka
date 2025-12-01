@@ -1,0 +1,238 @@
+/* style.css - تصميم رمادي بتدرجات، منفصل عن HTML */
+/* خطوط نظامية لتجنب تحميل خارجي؛ لو تحب خط عربي تضيف @import لخط من Google في HTML */
+
+:root{
+  --bg:#fdfdfd;
+  --card:#cbc8c8;
+  --dark:#274bad;
+  --muted:#b95f5f;
+  --accent-grad: linear-gradient(135deg,#dcdcdc,#000000);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif;
+  background:linear-gradient(180deg,#f7f7f7,#cbcaca);
+  color:var(--dark);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  direction:rtl;
+}
+/* Basic reset for the footer area */
+.social-footer {
+  background: #0b0b0b;
+  color: #fff;
+  padding: 18px 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.social-footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* brand/text */
+.social-footer .brand {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* social list */
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.social-list li { display: inline-block; }
+
+/* link / icon styling */
+.social-list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.04);
+  text-decoration: none;
+  transition: transform .18s ease, background .18s ease;
+  color: inherit;
+}
+
+/* SVG fill — using currentColor so hover color applies */
+.social-list svg { fill: currentColor; width: 22px; height: 22px; }
+
+/* hover/focus */
+.social-list a:hover,
+.social-list a:focus {
+  transform: translateY(-4px);
+  background: rgba(255,255,255,0.09);
+  outline: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* responsive tweaks */
+@media (max-width: 520px) {
+  .social-footer .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.wrap{
+  max-width:1100px;
+  margin:28px auto;
+  padding:20px;
+}
+
+/* Header */
+.site-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:18px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand .logo{width:56px;height:56px;flex:0 0 56px}
+.brand-text h1{
+  margin:0;
+  font-size:20px;
+  letter-spacing:1px;
+}
+.subtitle{margin:2px 0 0;font-size:12px;color:var(--muted)}
+
+/* Socials */
+/*.socials{display:flex;gap:8px}
+.social{
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:8px;
+  background:var(--card);
+  box-shadow: 0 2px 6px rgba(36, 39, 152, 0.06);
+  font-size:13px;
+  color:var(--dark);
+}
+.social:hover{transform:translateY(-2px);transition:all .15s ease}
+
+/* Hero */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:18px;
+  align-items:stretch;
+  margin-bottom:20px;
+}
+.hero-left h2{margin:0 0 8px;font-size:28px}
+.hero-left p{margin:0 0 14px;color:var(--muted)}
+
+.cta-row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:10px;
+  text-decoration:none;
+  background:var(--dark);
+  color:#000000;
+  font-weight:600;
+}
+.btn.outline{
+  background:transparent;color:var(--dark);
+  border:2px solid rgba(184, 17, 17, 0.08);
+}
+
+/* Hero right card */
+.hero-card{
+  background:var(--card);
+  padding:14px;
+  border-radius:12px;
+  min-height:120px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-end;
+}
+.console-logos{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.console-badge{display:flex;flex-direction:column;align-items:center}
+.console-label{
+  font-size:12px;
+  color:var(--muted);
+  margin-bottom:6px;
+}
+.ps-svg{width:120px;height:72px;border-radius:8px;display:block}
+
+/* Games */
+.games{margin:18px 0}
+.games h3{margin:6px 0 8px}
+.muted{color:var(--muted);font-size:13px}
+.games-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:12px;
+}
+.game{
+  display:block;
+  padding:10px;
+  background:linear-gradient(180deg,#9b9a9a,#e6e6e6);
+  border-radius:10px;
+  text-decoration:none;
+  color:var(--dark);
+  font-weight:600;
+  box-shadow: 0 2px 6px rgba(185, 29, 29, 0.05);
+  text-align:right;
+  font-size:14px;
+}
+.game:hover{transform:translateY(-4px);transition:all .14s ease}
+
+/* Info cards */
+.info{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+.card{
+  background:var(--card);
+  padding:14px;border-radius:10px;
+}
+
+/* Contact */
+.contact{margin:18px 0;background:linear-gradient(180deg #941c1c,#2148ab);padding:14px;border-radius:10px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px}
+.contact-grid p{margin:6px 0;color:var(--muted);font-size:14px}
+
+/* Footer */
+.site-footer{text-align:center;color:var(--muted);margin-top:26px;font-size:14px}
+
+/* Responsive */
+@media (max-width:900px){
+  .wrap{padding:12px}
+  .hero{grid-template-columns:1fr;gap:12px}
+  .games-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .info{grid-template-columns:1fr}
+}
+
+@media (max-width:420px){
+  .games-grid{grid-template-columns:1fr}
+  .socials{flex-wrap:wrap}
+  .brand-text h1{font-size:18px}
+}
