@@ -1,194 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tiki Taka — PlayStation &amp; Café</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiki Taka — PlayStation & Café</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="wrap">
-    <header class="site-header">
-      <div class="brand">
-        <div class="logo">
-          <!-- شعار كتابي بسيط للمحل -->
-          <svg width="56" height="56" viewBox="0 0 100 100" xmlns=""aria-hidden="true">
-            <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0" stop-color="#e6e6e6"/>
-                <stop offset="1" stop-color="#1b1b1b"/>
-              </linearGradient>
-            </defs>
-            <rect rx="16" width="100" height="100" fill="url(#g1)"/>
-            <text x="50" y="58" font-family="Arial, Helvetica, sans-serif" font-size="38" fill="#fff" text-anchor="middle">TT</text>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <h1>Tiki Taka</h1>
-          <p class="subtitle">PlayStation &amp; Café</p>
+  <header class="site-header">
+    <div class="wrap-header">
+      <!-- Logo جديد -->
+      <div class="logo-new">
+        <div class="football"></div>
+        <span class="t-letter">T</span>
+        <span class="t-letter">T</span>
+      </div>
+
+      <!-- Social Icons فوق -->
+<div class="social-top">
+  <a href="https://www.facebook.com/share/1DBKuPv3nX/?mibextid=wwXIfr" aria-label="Facebook" class="social-icon facebook" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.22 10.44 22v-7.03H7.9v-2.9h2.54V9.5c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.86h2.74l-.44 2.9h-2.3V22C18.34 21.22 22 17.1 22 12.07z"/></svg>
+  </a>
+  
+  <a href="https://www.instagram.com/tikiiitaka1?igsh=MTJ5NWp1aHNpZmN4bg==" aria-label="Instagram" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.4-3.4a1.12 1.12 0 1 1-1.12 1.12A1.12 1.12 0 0 1 18.4 4.8zM12 10.4A1.6 1.6 0 1 1 10.4 12 1.6 1.6 0 0 1 12 10.4z"/></svg>
+  </a>
+  
+  <a href="https://www.tiktok.com/@tikiiitaka1?_r=1&_t=ZS-91tgiNQyaVM" aria-label="TikTok" class="social-icon tiktok" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M9 3v10.1A4.9 4.9 0 1 0 14 18V8h3V5h-3V3H9z"/></svg>
+  </a>
+</div>
+
+<!--div class="left-icons">
+        <div class="logo">LOGO</div>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="icon">
+
+    </div-->
+
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Welcome To Tiki Taka</h2>
+        <p>A place that combines PlayStation gaming with high-quality coffee — gather your friends and enjoy the latest games on PS5 and PS4</p>
+        <div class="cta-row">
+          <a class="btn" href="#games">Available Games</a>
+          <a class="btn outline" href="#contact">Call Us</a>
         </div>
       </div>
 
-      <!--nav class="socials">
-        <a href="#" class="social" id="tiktok-link" aria-label="TikTok">TikTok</a>
-        <a href="#" class="social" id="instagram-link" aria-label="Instagram">Instagram</a>
-        <a href="#" class="social" id="facebook-link" aria-label="Facebook">Facebook</a>
-      </nav-->
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <h2>Welcom To Tiki Taka</h2>
-          <p>A place that combines PlayStation gaming with high-quality coffee — gather your friends and enjoy the latest games on PS5 and PS4</p>
-          <div class="cta-row">
-            <a class="btn" href="#games">Watch The Available Games</a>
-            <a class="btn outline" href="#contact">Call Us</a>
-          </div>
-        </div>
-        <div class="hero-right">
-          <!-- أي صورة أو عنصر زخرفي -->
-          <div class="hero-card">
-            <div class="console-logos">
-              <!-- PS5 SVG logo -->
-              <div class="console-badge">
-                <div class="console-label">PS5</div>
-                <svg class="ps-svg" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <rect width="100" height="60" rx="8" fill="#111"/>
-                  <text x="50" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#fff" text-anchor="middle">PS5</text>
-                </svg>
-              </div>
-
-              <!-- PS4 SVG logo -->
-              <div class="console-badge">
-                <div class="console-label">PS4</div>
-                <svg class="ps-svg" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <rect width="100" height="60" rx="8" fill="#222"/>
-                  <text x="50" y="38" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#fff" text-anchor="middle">PS4</text>
-                </svg>
-              </div>
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="console-logos">
+            <div class="console-badge">
+              <div class="console-label">PS5</div>
+              <svg class="ps-svg" viewBox="0 0 100 60">
+                <rect width="100" height="60" rx="8" fill="#111"/>
+                <text x="50" y="38" font-family="Arial" font-size="28" fill="#fff" text-anchor="middle">PS5</text>
+              </svg>
             </div>
-
-            <p class="small"></p>
+            <div class="console-badge">
+              <div class="console-label">PS4</div>
+              <svg class="ps-svg" viewBox="0 0 100 60">
+                <rect width="100" height="60" rx="8" fill="#222"/>
+                <text x="50" y="38" font-family="Arial" font-size="28" fill="#fff" text-anchor="middle">PS4</text>
+              </svg>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="games" class="games">
-        <h3>Available Games Now</h3>
+    <section id="games" class="games">
+      <h3>Available Games Now</h3>
+      <div class="games-grid">
+        <a class="game" href="#" data-console="PS5">FIFA 26 (PS5)</a>
+        <a class="game" href="#" data-console="PS5">FIFA 25 (PS5)</a>
+        <a class="game" href="#" data-console="PS5">FIFA 24 (PS5)</a>
+        <a class="game" href="#" data-console="PS5">FIFA 23 (PS5)</a>
+        <a class="game" href="#" data-console="PS5">FIFA 22 (PS5)</a>
+        <a class="game" href="#" data-console="PS5">FIFA 21 (PS5)</a>
+        <a class="game" href="#" data-console="PS5">ROCKET LEAGUE (PS5)</a>
+        <a class="game" href="#" data-console="PS4">PES 21 (PS4)</a>
+        <a class="game" href="#" data-console="PS4">PES 19 (PS4)</a>
+      </div>
+    </section>
 
-        <div class="games-grid">
-          <!-- أمثلة ألعاب — عدلها براحتك -->
-          <a class="game" href="#" data-console="PS5">FIFA 26 (PS5)</a>
-          <a class="game" href="#" data-console="PS5">FIFA 25 (PS5)</a>
-          <a class="game" href="#" data-console="PS4">FIFA 24 (PS5)</a>
-          <a class="game" href="#" data-console="PS5">FIFA 23 (PS5)</a>
-          <a class="game" href="#" data-console="PS5">FIFA 22 (PS5)</a>
-          <a class="game" href="#" data-console="PS5">ROCKET LEAGUE (PS5)</a>
+    <section id="about" class="info">
+      <div class="card">
+        <h4>About Us</h4>
+        <p>Tiki Taka is a PlayStation café and arcade designed for gamers and coffee lovers, offering a cozy atmosphere and flexible working hours. Hourly subscriptions, tournaments, and signature drinks available.</p>
+      </div>
+      <div class="card">
+        <h4>Services</h4>
+        <ul>
+          <li>Hourly play sessions</li>
+          <li>Gaming room reservations</li>
+          <li>Weekly tournaments</li>
+          <li>Drinks and appetizers</li>
+        </ul>
+      </div>
+    </section>
 
-          <a class="game" href="#" data-console="PS4">FIFA 25 (PS4)</a>
-          <a class="game" href="#" data-console="PS4">FIFA 24 (PS4)</a>
-          <a class="game" href="#" data-console="PS4">FIFA 23 (PS4)</a>
-          <a class="game" href="#" data-console="PS4">FIFA 22 (PS4)</a>
-          <a class="game" href="#" data-console="PS4">FIFA 21 (PS4)</a>
-          <a class="game" href="#" data-console="PS4">PES 21(PS4)</a>
-          <a class="game" href="#" data-console="PS4">PES 19(PS4)</a>
+    <section id="contact" class="contact">
+      <h3>Contact Us</h3>
+      <div class="contact-grid">
+        <div>
+          <strong>Location</strong>
+          <p><a href="#" target="_blank">Click to view on Google Maps</a></p>
         </div>
-      </section>
-
-      <section id="about" class="info">
-        <div class="card">
-            <h4>About US</h4>
-          <p>Tiki Taka is a PlayStation café and arcade designed for gamers and coffee lovers, offering a cozy atmosphere and flexible working hours. We provide hourly subscriptions, tournament-friendly setups, and a selection of signature drinks.</p>
+        <div>
+          <strong>Working Hours</strong>
+          <p>24 HOURS</p>
         </div>
-
-        <div class="card">
-          <h4>Servic</h4>
-          <ul>
-            <li>Hourly play sessions</li>
-            <li>Gaming room reservations</li>
-            <li>Weekly tournaments</li>
-            <li>Drinks and appetizers</li>
-          </ul>
+        <div>
+          <strong>Contact</strong>
+          <p>01032111456</p>
         </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="contact" class="contact">
-        <h3>contact Us</h3>
-        <div class="contact-grid">
-          <div>
-            <strong>Address</strong>
-            <p><a href="https://maps.apple.com/place?coordinate=30.979860,31.170895&name=Ahmed%20Hilmy%E2%80%99s%20Location&map=explore" target="_blank">
-  Click here to view on Google Maps
-</a></p>
-          </div>
-          <div>
-            <strong>:Working hours</strong>
-            <p>24 HOURS</p>
-          </div>
-          <div>
-            <strong>For contact</strong>
-            <p>01032111456</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Tiki Taka — PlayStation &amp; Café</p>
-    </footer>
-  </div>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Tiki Taka — PlayStation & Café</p>
+  </footer>
 
   <script>
-    // سكريبت صغير لتعبئة السنة وتغيير روابط (تقدر تحذفه أو تعدله)
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // لو عايز تعدل الروابط عن طريق الجافاسكربت بدل تعديل HTML
-    // مثال: ضع روابط حساباتك هنا
-    document.getElementById('tiktok-link').href = "";
-    document.getElementById('instagram-link').href = "";
-    document.getElementById('facebook-link').href = "";
   </script>
-  <!-- Social links footer -->
-<footer class="social-footer">
-  <div class="container">
-    <p class="brand">Tiki Taka</p>
-    <ul class="social-list" aria-label="Tiki Taka social links">
-      <!-- Facebook -->
-      <li>
-        <a href="https://www.facebook.com/share/16ouXxt9gw/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook - Tiki Taka">
-          <!-- Facebook SVG -->
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
-            <path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.22 10.44 22v-7.03H7.9v-2.9h2.54V9.5c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.76-1.61 1.54v1.86h2.74l-.44 2.9h-2.3V22C18.34 21.22 22 17.1 22 12.07z"/>
-          </svg>
-        </a>
-      </li>
-
-      <!-- Instagram -->
-      <li>
-        <a href="https://www.instagram.com/tikiiitaka1?igsh=MTFkbXgyaHRzejhodw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram - Tiki Taka">
-          <!-- Instagram SVG -->
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
-            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.2A4.8 4.8 0 1 0 16.8 13 4.8 4.8 0 0 0 12 8.2zm6.4-3.4a1.12 1.12 0 1 1-1.12 1.12A1.12 1.12 0 0 1 18.4 4.8zM12 10.4A1.6 1.6 0 1 1 10.4 12 1.6 1.6 0 0 1 12 10.4z"/>
-          </svg>
-        </a>
-      </li>
-
-      <!-- TikTok -->
-      <li>
-        <a href="https://www.tiktok.com/@tikiiitaka1?_r=1&_t=ZS-91rrTWSTBDe" target="_blank" rel="noopener noreferrer" aria-label="TikTok - Tiki Taka">
-          <!-- TikTok-like SVG (simple note) -->
-          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
-            <path d="M9 3v10.1A4.9 4.9 0 1 0 14 18V8h3V5h-3V3H9z"/>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
 </body>
-
 </html>
-
-
